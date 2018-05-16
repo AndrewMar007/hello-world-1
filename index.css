@@ -13,20 +13,18 @@ header {
   height: 40px;
   overflow: hidden;
 }
-.header-wrapper {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
 .app-wrapper {
-  padding-top: 80px;
-  padding-left: 300px;
   background: white;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
 }
 .app-wrapper img {
   width: 100%;
 }
 .logo {
+  width: 300px;
   height: 100%;
   display: flex;
   display: -webkit-box;
@@ -74,11 +72,10 @@ header {
   margin-right: 8px;
 }
 .unused {
-  position: fixed;
   left: 0;
   top: 80px;
   bottom: 0;
-  width: 300px;
+  min-width: 300px;
   overflow: hidden;
 }
 nav {
@@ -122,6 +119,7 @@ a {
 }
 .poem {
   text-align: center;
+  white-space: pre-line;
 }
 
 @media screen and (max-width: 960px) {
@@ -137,9 +135,6 @@ a {
 }
 
 @media screen and (max-width: 720px) {
-  .unused {
-    position: static;
-  }
   .app-wrapper {
     padding-left: 0;
     display: flex;
